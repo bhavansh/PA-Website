@@ -53,6 +53,9 @@ app.use("/api/user", userRouter);
 const verifyRouter = require("./routes/Verify");
 app.use("/api/verify", verifyRouter);
 
+const contributorsRouter = require("./routes/Contributors");
+app.use("/api", contributorsRouter);
+
 // ******************************
 
 // Start the server in the specified port number which is there in the environment variable
